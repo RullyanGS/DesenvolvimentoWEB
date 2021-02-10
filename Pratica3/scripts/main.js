@@ -2,10 +2,10 @@ let minhaImagem = document.querySelector('img');
 
 minhaImagem.onclick = function() {
     let meuSrc = minhaImagem.getAttribute('src');
-    if(meuSrc === 'imagens/firefox-icon.png') {
-      minhaImagem.setAttribute ('src','imagens/firefox2.png');
+    if(meuSrc === 'images/firefox-icon.png') {
+      minhaImagem.setAttribute ('src','images/firefox2.png');
     } else {
-      minhaImagem.setAttribute ('src','imagens/firefox-icon.png');
+      minhaImagem.setAttribute ('src','images/firefox-icon.png');
     }
 }
 
@@ -18,7 +18,7 @@ function defineNomeUsuario() {
       defineNomeUsuario();
     } else {
       localStorage.setItem('nome', meuNome);
-      meuCabecalho.innerHTML = 'Mozilla é legal, ' + meuNome;
+      meuCabecalho.innerHTML = 'Mozilla is cool, ' + meuNome;
     }
 }
 
@@ -26,7 +26,7 @@ if(!localStorage.getItem('nome')) {
     defineNomeUsuario();
 } else {
     let nomeGuardado = localStorage.getItem('nome');
-    meuCabecalho.textContent = 'Mozilla é legal, ' + nomeGuardado;
+    meuCabecalho.textContent = 'Mozilla is cool, ' + nomeGuardado;
 }
 
 meuBotao.onclick = function() { 
